@@ -1,0 +1,39 @@
+/*
+Vertical Menu Example
+*/
+/*unindent the list*/
+
+#menu ul{
+    margin-left: -2.5em;
+}
+/* set li as buttons*/
+#menu li{
+list-style-type:none;
+border: 1px black solid;
+width:10em;
+background-color: #DEDEDE;
+text-align: center;
+}
+
+/*display anchors as buttons */
+#menu a{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+/*flash white on anchor hover*/
+#menu a:hover{
+    background-color: #FFFFFF;
+}
+
+/*collapse menuse*/
+#menu li ul{
+    display:none;
+}
+
+/*show submenus on hover*/
+#menu li:hover > ul{
+    display: block;
+    margin-left: -2em;
+}
